@@ -50,15 +50,6 @@ h2 {
   font-size: 560px;
 }
 
-.content {
-  height: 80vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   background-color: #fc5c9c;
   text-align: center;
@@ -337,5 +328,14 @@ img {
     opacity: 0;
     top: 90%;
   }
+}
+
+.content {
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

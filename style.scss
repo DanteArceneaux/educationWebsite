@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Roboto&family=Varela+Round&display=swap");
 
-$primary-color: #099bf6;
-$secondary-color: #fc5c9c;
+$primary-color: blue;
+$secondary-color: red;
 
 *,
 *::before,
@@ -50,13 +50,7 @@ h2 {
 	font-size: 560px;
 }
 
-.content {
-	height: 80vh;
-	display: grid;
-	place-items: center;
-	margin: 0;
-	padding: 0;
-}
+
 
 .header {
 	background-color: $secondary-color;
@@ -289,4 +283,13 @@ img {
 		opacity: 0;
 		top: 90%;
 	}
+}
+
+
+.content {
+	height: 80vh;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0;
 }
