@@ -25,10 +25,10 @@ closeMenu.addEventListener("click", () => {
 	gsap.to(".hero-content button", { x: 0, duration: 2, opacity: 1 });
 });
 
-$("h1").blast({
-	delimiter: "character",
-	customClass: "alpha",
-});
+// $("h1").blast({
+// 	delimiter: "character",
+// 	customClass: "alpha",
+// });
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -80,7 +80,7 @@ gsap.from(".about-section img", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
+		
 	},
 });
 gsap.to(".about-section img", {
@@ -90,7 +90,7 @@ gsap.to(".about-section img", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
+	
 	},
 });
 
@@ -101,7 +101,7 @@ gsap.from(".about-section div", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
+		
 	},
 });
 gsap.to(".about-section div", {
@@ -111,7 +111,7 @@ gsap.to(".about-section div", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 10%",
-		scrub: 2,
+		
 		markers: false,
 	},
 });
