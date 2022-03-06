@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 .hero-section {
@@ -17,9 +17,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center 20%;
 	background-blend-mode: overlay;
+	letter-spacing: 2px;
 }
 
 nav {
+	z-index: 10;
 	position: fixed;
 	width: 100%;
 	background-color: rgb(253, 253, 253);
@@ -82,6 +84,7 @@ nav .logo {
 	font-size: 1.5rem;
 	cursor: pointer;
 	padding: 5px;
+	color: black;
 }
 .logo:hover {
 	color: #40abf2;
@@ -89,10 +92,7 @@ nav .logo {
 }
 
 .accent-color {
-	color: #f24080;
-}
-.menuLinks:hover span {
-	color: #96d1f8;
+	color: #40abf2;
 }
 
 .hero-content {
@@ -134,6 +134,52 @@ nav .logo {
 	transition: 0.3s;
 }
 
+/* ************************* Section ABOUT ******************************** */
+
+.about-section {
+	display: flex;
+	height: 100vh;
+	gap: 2rem;
+	place-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+.about-section img {
+	height: 600px;
+	width: auto;
+	margin: 0 10%;
+}
+
+.about-section div {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5%;
+	gap: 2rem;
+}
+
+.about-section div h2 {
+	color: #f24080;
+	font-size: 3rem;
+}
+
+.about-section button {
+	display: inline;
+	padding: 0.5rem 1.5rem;
+
+	margin-right: auto;
+	background: #f24080;
+	border: none;
+	color: white;
+	border-radius: 10px;
+	font-size: larger;
+	letter-spacing: 2px;
+}
+.about-section button:hover {
+	background-color: #40abf2;
+	transition: 0.3s;
+}
+
 /* **************** M E D I A   Q U E R Y   800PX  *************************************** */
 
 @media (max-width: 800px) {
@@ -150,6 +196,10 @@ nav .logo {
 		background-color: rgb(250, 250, 250);
 		transition: top 1s ease;
 		display: none;
+	}
+
+	.openMenu {
+		z-index: 3;
 	}
 
 	nav .mainMenu .closeMenu {
@@ -181,6 +231,7 @@ nav .logo {
 		align-self: center;
 	}
 	.hero-content h1 {
+		z-index: 0;
 		font-size: 3rem;
 	}
 }
@@ -204,5 +255,40 @@ nav .logo {
 
 	.fa-bars {
 		font-size: 0.8rem;
+	}
+}
+
+.scrolled {
+	background-color: #000000;
+	color: white;
+	transition: 1s;
+}
+
+.menuLink {
+	color: white !important;
+}
+
+.logos {
+	color: white !important;
+}
+
+@media (max-width: 1230px) {
+	.about-section {
+		flex-direction: column;
+	}
+
+	.about-section img {
+		order: 3;
+		height: 300px;
+	}
+	.about-section div {
+		margin: 0 5%;
+	}
+	.about-section div h2 {
+		font-size: 2rem;
+	}
+
+	.about-section button {
+		font-size: 0.5rem;
 	}
 }
