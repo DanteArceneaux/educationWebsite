@@ -112,7 +112,7 @@ gsap.to(".about-section div", {
 		start: "top 90%",
 		end: "bottom 10%",
 		scrub: 3,
-		markers: true,
+		markers: false,
 	},
 });
 
