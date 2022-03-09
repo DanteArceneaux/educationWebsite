@@ -23,13 +23,25 @@ a, a:active, a:visited {
 .hero-section {
 	display: flex;
 	height: 80vh;
-	background-color: rgb(31, 30, 30);
-	background-image: url(images/photo-1531545514256-b1400bc00f31.jpeg);
-	background-size: cover;
+	background-color: var(--secondary);
+	background-image: url(images/ielts.svg);
+	/* background-size: cover; */
 	background-repeat: no-repeat;
-	background-position: center 20%;
-	background-blend-mode: overlay;
+	background-position: 10%;
+	/* background-blend-mode: overlay; */
 	letter-spacing: 2px;
+}
+
+@media (max-width: 1797px) { 
+	.hero-section { 
+		background-image: none;
+	}
+}
+
+.ielts-img { 
+	
+	margin-top: 100px;
+	border-radius: 13px;
 }
 
 nav {
