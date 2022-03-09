@@ -1,7 +1,14 @@
+
+
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	--primary: #f49212;
+	--secondary: #242625;
+	--accent: #f5f5f4; 
 }
 
 body {
@@ -15,7 +22,7 @@ a, a:active, a:visited {
 
 .hero-section {
 	display: flex;
-	height: 100vh;
+	height: 80vh;
 	background-color: rgb(31, 30, 30);
 	background-image: url(images/photo-1531545514256-b1400bc00f31.jpeg);
 	background-size: cover;
@@ -55,7 +62,7 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-	background-color: #f24080;
+	background-color: var(--primary);
 	transition: 0.5s;
 }
 
@@ -77,10 +84,10 @@ nav .mainMenu .closeMenu,
 	color: #030fb3;
 }
 .fa-instagram:hover {
-	color: #f24080;
+	color: var(--primary);
 }
 .fa-twitter:hover {
-	color: #40abf2;
+	color: var(--secondary);
 }
 .fa-youtube:hover {
 	color: #f50c0c;
@@ -95,12 +102,12 @@ nav .logo {
 	color: black;
 }
 .logo:hover {
-	color: #40abf2;
+	color: var(--secondary);
 	transition: 0.5s;
 }
 
 .accent-color {
-	color: #40abf2;
+	color: var(--secondary);
 }
 
 .hero-content {
@@ -110,7 +117,7 @@ nav .logo {
 	flex-direction: column;
 	place-content: center;
 	place-items: center;
-	color: white;
+	color: var(--accent);
 	line-height: 1;
 }
 
@@ -120,7 +127,7 @@ nav .logo {
 
 .hero-content p {
 	font-size: 1.5rem;
-	color: #f24080 !important;
+	color: var(--primary) !important;
 	margin-bottom: 20px;
 }
 
@@ -129,7 +136,7 @@ nav .logo {
 	font-size: 1.5rem;
 	padding: 0.5rem 1.5rem;
 	color: #fff !important;
-	background-color: #f24080 !important;
+	background-color: var(--primary) !important;
 	border-radius: 15px;
 	transition: 0.3s;
 	border: none;
@@ -137,8 +144,8 @@ nav .logo {
 
 .hero-content button:hover {
 	
-	background-color: white !important;
-	color: #f24080 !important;
+	background-color: var(--accent) !important;
+	color: var(--primary) !important;
 	border: none;
 	border-radius: 15px;
 	transition: 0.3s;
@@ -148,7 +155,7 @@ nav .logo {
 
 .about-section {
 	display: flex;
-	height: 100vh;
+	height: 80vh;
 	gap: 2rem;
 	place-items: center;
 	justify-content: center;
@@ -169,7 +176,7 @@ nav .logo {
 }
 
 .about-section div h2 {
-	color: #f24080;
+	color: var(--primary);
 	font-size: 3rem;
 }
 
@@ -178,15 +185,15 @@ nav .logo {
 	padding: 0.5rem 1.5rem;
 
 	margin-right: auto;
-	background: #f24080;
+	background: var(--primary);
 	border: none;
-	color: white;
+	color: var(--accent);
 	border-radius: 10px;
 	font-size: larger;
 	letter-spacing: 2px;
 }
 .about-section button:hover {
-	background-color: #40abf2;
+	background-color: var(--secondary);
 	transition: 0.3s;
 }
 
@@ -225,7 +232,7 @@ nav .logo {
 
 	nav .mainMenu li a:hover {
 		background: none;
-		color: #f24080;
+		color: var(--primary);
 		font-size: 1.6rem;
 	}
 
@@ -255,6 +262,7 @@ nav .logo {
 	.fa-bars {
 		font-size: 1rem;
 	}
+
 }
 
 @media (max-width: 350px) {
@@ -270,16 +278,16 @@ nav .logo {
 
 .scrolled {
 	background-color: #000000;
-	color: white;
+	color: var(--accent);
 	transition: 1s;
 }
 
 .menuLink {
-	color: white !important;
+	color: var(--accent) !important;
 }
 
 .logos {
-	color: white !important;
+	color: var(--accent) !important;
 }
 
 @media (max-width: 1230px) {
@@ -336,4 +344,105 @@ nav .logo {
 
 nav h2 { 
 	margin: 0 20px;
+}
+
+#main-title { 
+	font-size: 60px;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #000000;
+}
+
+.fa-chalkboard-user { 
+	color: var(--primary);
+	margin-right:5px ;
+}
+.fa-envelope-dot { 
+	color: black;
+}
+
+
+/* **************** Course section *************************************** */
+
+
+
+.course { 
+	display: flex;
+	flex-direction: column;
+	
+	height: 100vh;
+	background-color: var(--primary);
+	color: black;
+	justify-content: center;
+	
+}
+.course h1 { 
+	margin-top: 0;
+	padding-top: 0;
+	place-self: center;
+	color: var(--accent);
+	margin-top: 120px;
+	font-size: 40px;
+}
+.course p { 
+	margin-top: 0;
+	padding-top: 0;
+	place-self: center;
+	margin-bottom: auto;
+	margin-top: 20px;
+	font-size: 20px;
+	
+
+}
+
+.course-grid-container { 
+	
+	margin-bottom: auto;
+	display: grid;
+	
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	gap: 20px;
+
+
+
+	
+
+	
+}
+.course-card { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	place-content: center;
+	padding: 50px;
+	place-self: center;
+	max-width: 80%;
+	color: black;
+	background-color: #fff;
+	height: 400px;
+	border-radius: 10px;
+	gap: 50px;
+	
+}
+
+.course-card img { 
+	place-self: center;
+	max-width: 100px;
+	height: auto;
+}
+.course-card p { 
+	font-size: 1rem;
+	letter-spacing: 1px;
+	line-height: 1.6;
+}
+.course-card h2 { 
+	font-size: 1.4rem;
+}
+
+@media (max-width: 900px) { 
+	.course { 
+		height: 200vh;
+	}
 }
