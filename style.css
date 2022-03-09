@@ -385,6 +385,8 @@ nav h2 {
 	color: var(--accent);
 	margin-top: 120px;
 	font-size: 40px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 .course p { 
 	margin-top: 0;
@@ -393,12 +395,14 @@ nav h2 {
 	margin-bottom: auto;
 	margin-top: 20px;
 	font-size: 20px;
-	
+	margin-left: 25px;
+	margin-right: 25px;
 
 }
 
 .course-grid-container { 
 	
+
 	margin-bottom: auto;
 	display: grid;
 	
@@ -412,6 +416,7 @@ nav h2 {
 	
 }
 .course-card { 
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
